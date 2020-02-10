@@ -5,7 +5,14 @@
 !*.yaml
 !.gitignore
 !*.md
-
+!.cloud
+!.storage
+!custom_components
+!deps
+!glances
+!themes
+!tts
+!www
 
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml
