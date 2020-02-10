@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hassio-linked",
+  "private_key_id": "97fb4861f969bc8a0b8adb4427097ea87a221c2e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCR5RRidk4TG8Q\nCwVQQaE/bE+uS6AiZIN16AdwFh3mC7lQ2JnEXUquGZ4SksnOpp/PO4mIHVSEJ6Am\nGbsmOr2Llzh1Jmk6RdI/heAXu/m8BB83FG2uqX08qbsWdUlBghY3TUye4P7eBqZN\nR7Ai4+N2w3MB90UQiSQ2Jk/Ueag3dE9cPIFc3weRc/BxAF5uQc53CVA/GIcm3kHQ\nYteR7svlyZQwBW9F20vlPtTqPFIBzapIkf0P5AHV2EbeZnkgX4tZduZWcQbUHIU/\n3bJGdTegZRnAKmxyTj4mVbyv3d5WaZnY+AksNFhw4FmYIzr5wiQMvYRQ0YZVK/gE\nDEDbicAPAgMBAAECggEAHPx1Ap1gjWfKAkjCqDDCkCXm1YhvAfKhMoxF39FM8K+7\nHHbUqlmI9OTZksfX2D9ABLlLUcWegIExAb5BD/kfop4TTFdIx+r27YdZ4fCn2Ad9\naMhhfPfIua5RPY6OOXnhOqsLzYCgRhwT39/cRbheja+njxmHcmojvviEXJ0yHeO3\niq94PHFwhkPXlI0dhl4YXznj3JkPHvNxzSLMNysgHsBh5dsD5G6HpPwtVkxNsQ79\n00HDhXCpwu63oorZl3ONdAibHA6v/GT0LzFi+jchDseSjq68bIBSpbfnNYl/e0se\nlddXSOfIYksgSORzy34vqibY/QdD7YXJ1v+faX/N8QKBgQD8n7r3fhEX+rtLTX7A\n+nT3755gYuab04d1FcKu+IwNu5jvskrI/QQ5vqZRYwSFR38jGSYJAs76++csLwIz\nZ9O0qqAZumxiaEecE3KqDh6FgDt8zIwah76US+BHSbrfc+NbJQ86FAOrfBU4o7hb\nzX02YoGnpEncfZyo5LeUxNcNawKBgQDE4D46iyNC57dkdfV9u/cuC10963XyBxWk\nIgaYtUKBla1M71TqeZQY6xB3u/TUE0CuZfEXNQekk95KkFP77y7EUIhh+22F6v7W\nh1Sd1HsN611dUxf7OVjcv6KEtBX7q4cwzTPQm0ca970UmMOORj3UQqXC6jTND7Mk\nRPDpN/f87QKBgQCiThWXkR12ZJcU6HM5lTC1YvRERQaYsyziYtq0A+gnopG93rUB\nsN2YJA9DVvS+lJLwf+XaAD3vLwz1bDZjxJ9WAhHetdGQ4CKx+iS/cVbWuu59XgXd\nvb0KFj3AT3SKwDAgjQzdaaJ5+LzBqR53jOyXlm5qwLjburB+KoRwRo9MhQKBgBlv\nazq/DSAwtaXaA4xqA2ZEe5hrWkKZnbcl2jpSeLQrNUeSSCM+795ESE1f0CKyFhIy\nA3LfHAysOfTiLqeG4EDmsqgOBrldge0PcOQvNnK27MoI2TlQ0GU8sO96ILjyETZB\n3Kbf2NDoHtqRXfp8orJQpf/HqGix1ZAjBAjtfTGFAoGANjyzQZ8GH9gKIp46yKHx\n7SjF1xpCY0y1r0IFoTzuz3q12SIkDsqPS9uvAdDAPJX+d4W0eY3ZusHTzKaXVuSK\n9JWHoPNE/XfEJGhvodA78MvMP+NF7DqEAdFDbOd5xXBnzPSaaOiIatTOhuRq9U83\nYX4rl8pxYnlDlowHPF+tF0I=\n-----END PRIVATE KEY-----\n",
+  "client_email": "hassio-linked@hassio-linked.iam.gserviceaccount.com",
+  "client_id": "113199253490254914494",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hassio-linked%40hassio-linked.iam.gserviceaccount.com"
+}

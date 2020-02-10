@@ -1,0 +1,195 @@
+{
+    "data": {
+        "config": {
+            "background": "var(--background-image)",
+            "resources": [
+                {
+                    "type": "js",
+                    "url": "/community_plugin/air-visual-card/air-visual-card.js"
+                },
+                {
+                    "type": "module",
+                    "url": "/community_plugin/spotify-card/spotify-card.js"
+                }
+            ],
+            "title": "Home",
+            "views": [
+                {
+                    "badges": [
+                        {
+                            "entity": "sun.sun"
+                        },
+                        {
+                            "entity": "sensor.time"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "entity": "weather.home",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entities": [
+                                "sensor.u_s_air_pollution_level_2",
+                                "sensor.u_s_air_quality_index_2",
+                                "sensor.u_s_main_pollutant_2"
+                            ],
+                            "show_header_toggle": false,
+                            "theme": "Backend-selected",
+                            "title": "Air Quality in Hanoi",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.time"
+                                },
+                                {
+                                    "entity": "switch.den_cho_ga",
+                                    "icon": "mdi:ceiling-light"
+                                },
+                                {
+                                    "entity": "automation.bat_hen_gio",
+                                    "icon": "mdi:timer"
+                                },
+                                {
+                                    "entity": "input_datetime.switch_denga_on"
+                                },
+                                {
+                                    "entity": "automation.tat_hen_gio",
+                                    "icon": "mdi:timer-off"
+                                },
+                                {
+                                    "entity": "input_datetime.switch_denga_off"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "theme": "Backend-selected",
+                            "title": "\u0110\u00e8n",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.volumio_volumio_local",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "climate.dieu_hoa_tang_2",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "media_player.tv_phong_khach",
+                            "type": "media-control"
+                        }
+                    ],
+                    "icon": "mdi:home",
+                    "path": "default_view",
+                    "theme": "Backend-selected",
+                    "title": "Home"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "aspect_ratio": "50%",
+                            "camera_image": "camera.camera_1",
+                            "entity": "camera.camera_1",
+                            "image": "https://www.home-assistant.io/images/merchandise/shirt-frontpage.png",
+                            "name": "Camera 1",
+                            "show_state": false,
+                            "type": "picture-entity"
+                        },
+                        {
+                            "aspect_ratio": "50%",
+                            "camera_image": "camera.camera_2",
+                            "entity": "camera.camera_2",
+                            "image": "https://www.home-assistant.io/images/merchandise/shirt-frontpage.png",
+                            "name": "Camera 2",
+                            "show_state": false,
+                            "type": "picture-entity"
+                        }
+                    ],
+                    "icon": "mdi:camera",
+                    "panel": false,
+                    "path": "camera",
+                    "theme": "Backend-selected",
+                    "title": "Camera"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "client_id": "c0c60270464342758f2a8f1188bdc6ec",
+                            "limit": 10,
+                            "type": "custom:spotify-card"
+                        },
+                        {
+                            "entity": "media_player.spotify_tien_dung",
+                            "type": "media-control"
+                        }
+                    ],
+                    "icon": "mdi:spotify",
+                    "panel": false,
+                    "path": "spotify-music",
+                    "theme": "Backend-selected",
+                    "title": "Spotify Music"
+                },
+                {
+                    "badges": [
+                        {
+                            "entity": "sensor.time"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.light_bedroom",
+                                    "icon": "mdi:ceiling-light",
+                                    "name": "\u0110\u00e8n ph\u00f2ng ng\u1ee7"
+                                }
+                            ],
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:bed-king",
+                    "panel": false,
+                    "path": "bedroom",
+                    "title": "Bedroom"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.cpu_temperature"
+                                },
+                                {
+                                    "entity": "sensor.memory_use_percent"
+                                },
+                                {
+                                    "entity": "sensor.processor_use"
+                                },
+                                {
+                                    "entity": "sensor.swap_use_percent"
+                                }
+                            ],
+                            "header": {
+                                "image": "/local/images/header-bg.png",
+                                "type": "picture"
+                            },
+                            "show_header_toggle": false,
+                            "title": "Device",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:raspberry-pi",
+                    "path": "raspberry-pi",
+                    "title": "Raspberry Pi"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}
