@@ -1,0 +1,83 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+http:
+  server_port: 443
+  base_url: goosecapital.duckdns.org
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+stream: !include stream.yaml
+camera: !include camera.yaml
+sensor: !include sensor.yaml
+climate: !include climate.yaml
+switch: !include switch.yaml
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Example configuration.yaml entry
+spotify:
+  client_id: !secret spotify_client_id
+  client_secret: !secret spotify_client_secret
+
+homekit:
+  name: "Tiến Dũng's Home"
+  filter: 
+    exclude_entities:
+      - binary_sensor.updater
+      - person.tien_dung
+    
+
+google_assistant:
+  project_id: hassio-linked
+  # api_key: AIzaSyCTKZ4NlPMAtukQB1Kn3wmKbJRr8lRWEjY
+  service_account: !include Hassio Linked-97fb4861f969.json
+  report_state: true
+  exposed_domains:
+    - switch
+    - light
+
+recorder:
+  purge_keep_days: 3
+  purge_interval: 1
+  exclude:
+    entities:
+      - sensor.date
+      - sensor.date_time
+      - sensor.date_time_iso
+      - sensor.internet_time
+      - sensor.time_date
+      - sensor.time
+      - sensor.time_utc
+
+input_datetime:
+  switch_denga_on:
+    name: "Hẹn giờ bật"
+    has_time: true
+    # initial: '17:00'
+  switch_denga_off:
+    name: "Hẹn giờ tắt"
+    has_time: true
+    # initial: '05:45'
+
+ios:
+
+discovery:
+
+notify:
+  - platform: html5
+    name: WebPushNotification
+    vapid_pub_key: !secret html5_push_vapid_pub_key
+    vapid_prv_key: !secret html5_push_vapid_prv_key
+    vapid_email: !secret html5_push_vapid_email

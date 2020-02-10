@@ -1,0 +1,17 @@
+- alias: "Tắt hẹn giờ"
+  id: switch_denga_off
+  trigger:
+  - platform: template
+    value_template: "{{ states.sensor.time.state == (states.input_datetime.switch_denga_off.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
+  action:
+  - service: switch.turn_off
+    entity_id: switch.den_cho_ga
+
+- alias: "Bật hẹn giờ"
+  id: switch_denga_on
+  trigger:
+  - platform: template
+    value_template: "{{ states.sensor.time.state == (states.input_datetime.switch_denga_on.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
+  action:
+  - service: switch.turn_on
+    entity_id: switch.den_cho_ga

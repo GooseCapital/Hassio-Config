@@ -1,0 +1,12 @@
+- platform: mqtt
+  name: "Đèn cho gà"
+  state_topic: "stat/sonoff_t3/RESULT"  
+  value_template: "{{ value_json.POWER }}"
+  command_topic: "cmnd/sonoff_t3/POWER"
+  payload_on: "ON"
+  payload_off: "OFF"
+  availability_topic: "tele/sonoff_t3/LWT"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+  retain: true

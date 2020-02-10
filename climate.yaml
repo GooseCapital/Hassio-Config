@@ -1,0 +1,33 @@
+- platform: mqtt
+  name: "Điều hòa tầng 2"
+  modes:
+  - "off"
+  - "cool"
+  - "dry"
+  - "heat"
+  - "auto"
+  swing_modes:
+  - "auto"
+  - "high"
+  - "middle"
+  - "low"
+  - "lowest"
+  - "highest"
+  fan_modes:
+  - "min"
+  - "low"
+  - "medium"
+  - "max"
+  tasmota_hvac_vendor: "MITSUBISHI112"
+  mode_command_topic: "cmnd/SmartIR/IRhvac"
+  mode_state_topic: "tele/SmartIR/RESULT"
+  mode_state_template: "{{ value_json['IrReceived'].IRHVAC.Mode | lower }}"
+  
+  temperature_command_topic: "cmnd/SmartIR/IRhvac"
+  temperature_state_topic: "tele/SmartIR/RESULT"
+  temperature_state_template: "{{ value_json['IrReceived'].Temp }}"
+  
+  fan_mode_command_topic: "cmnd/SmartIR/IRhvac"
+  fan_mode_state_topic: "tele/SmartIR/RESULT"
+  fan_mode_state_template: "{{ value_json['IrReceived'].FanSpeed | lower }}"
+  precision: 1.0

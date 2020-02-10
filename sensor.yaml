@@ -1,0 +1,30 @@
+- platform: airvisual
+  api_key: ec664fd8-a78d-41c3-8faf-f33f2bbd8c9f
+  monitored_conditions:
+    - us
+  show_on_map: true
+  city: hanoi
+  state: hanoi
+  country: vietnam
+  
+- platform: time_date
+  display_options:
+    - 'time'
+    - 'date'
+    - 'date_time'
+    - 'date_time_iso'
+    - 'time_date'
+    - 'time_utc'
+    - 'beat'
+
+- platform: command_line
+  name: CPU Temperature
+  command: "cat /sys/class/thermal/thermal_zone0/temp"
+  unit_of_measurement: "°C"
+  value_template: '{{ value | multiply(0.001) | round(1) }}'
+
+- platform: systemmonitor
+  resources:
+    - type: memory_use_percent
+    - type: swap_use_percent
+    - type: processor_use
