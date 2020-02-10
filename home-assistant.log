@@ -1,0 +1,27 @@
+2020-02-10 22:07:20 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
+2020-02-10 22:07:20 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for mqtt which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
+2020-02-10 22:08:54 ERROR (MainThread) [homeassistant.components.google_assistant.http] Request for https://homegraph.googleapis.com/v1/devices:reportStateAndNotification failed: 404
+2020-02-10 22:19:37 WARNING (Thread-6) [pychromecast.socket_client] [TV phòng khách:8009] Heartbeat timeout, resetting connection
+2020-02-10 22:20:07 ERROR (Thread-6) [pychromecast.socket_client] [TV phòng khách:8009] Failed to connect to service MIBOX3-1195083139521dde981786590e2af723._googlecast._tcp.local., retrying in 5.0s
+2020-02-10 22:21:51 WARNING (Thread-6) [pychromecast.socket_client] [TV phòng khách:8009] Heartbeat timeout, resetting connection
+2020-02-10 22:24:06 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:24:06 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:24:06 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:24:06 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:24:22 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:27:28 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:27:28 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:27:28 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:27:28 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:27:42 ERROR (Thread-6) [pychromecast.socket_client] [TV phòng khách:8009] Failed to connect to service MIBOX3-1195083139521dde981786590e2af723._googlecast._tcp.local., retrying in 5.0s
+2020-02-10 22:27:42 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:30:32 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:31:01 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:31:32 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:31:40 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:31:50 WARNING (Thread-6) [pychromecast.socket_client] [TV phòng khách:8009] Heartbeat timeout, resetting connection
+2020-02-10 22:31:51 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:32:04 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 70d5c27b323d7177f7d03da0dce8d57ee141075ae2f0df9bfca38e16024d7efd
+2020-02-10 22:32:21 ERROR (Thread-6) [pychromecast.socket_client] [TV phòng khách:8009] Failed to connect to service MIBOX3-1195083139521dde981786590e2af723._googlecast._tcp.local., retrying in 5.0s
+2020-02-10 22:33:47 WARNING (Thread-6) [pychromecast.socket_client] [TV phòng khách:8009] Heartbeat timeout, resetting connection
+2020-02-10 22:34:17 ERROR (Thread-6) [pychromecast.socket_client] [TV phòng khách:8009] Failed to connect to service MIBOX3-1195083139521dde981786590e2af723._googlecast._tcp.local., retrying in 5.0s

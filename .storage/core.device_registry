@@ -1,0 +1,88 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": "6a039332ec4340758aac40698c35a6b3",
+                "config_entries": [
+                    "56fc8e4ba31b4cb8af6f1468ff825cc4"
+                ],
+                "connections": [],
+                "id": "8dcb0b623c2e439a8a344c31f7772da1",
+                "identifiers": [
+                    [
+                        "cast",
+                        "1195083139521dde981786590e2af723"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "MIBOX3",
+                "name": "TV ph\u00f2ng kh\u00e1ch",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "56fc8e4ba31b4cb8af6f1468ff825cc4"
+                ],
+                "connections": [],
+                "id": "9945770819784ef5986b57a8fe562f0f",
+                "identifiers": [
+                    [
+                        "cast",
+                        "88ccae341a5437e74bd78272d8e3a746"
+                    ]
+                ],
+                "manufacturer": "Sony",
+                "model": "BRAVIA 4K UR2",
+                "name": "KD-55X8500G",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c11a13ad05b4402f88324c21661bc71e"
+                ],
+                "connections": [],
+                "id": "62613054d2274e4384b59c1764dc23cb",
+                "identifiers": [
+                    [
+                        "spotify",
+                        "chcs0xawskbxcd96qtw0h321h"
+                    ]
+                ],
+                "manufacturer": "Spotify AB",
+                "model": "Spotify premium",
+                "name": "Spotify Ti\u1ebfn D\u0169ng",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "ac0f2e4f547749e1950396c047101bec"
+                ],
+                "connections": [],
+                "id": "1c11882a5567465ead5f0a6750b9c513",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "7d87c62fdf97400fb08e74fcaacebe3a"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone 6s",
+                "name": "GooseCapital\u2019s iPhone",
+                "name_by_user": null,
+                "sw_version": "12.1.1",
+                "via_device_id": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

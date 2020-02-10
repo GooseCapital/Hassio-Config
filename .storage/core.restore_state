@@ -1,0 +1,174 @@
+{
+    "data": [
+        {
+            "last_seen": "2020-02-10T15:22:54.011517+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "H\u1eb9n gi\u1edd b\u1eadt",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 17,
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 61200
+                },
+                "context": {
+                    "id": "28083deac9074cb590ff9beed454ced1",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.switch_denga_on",
+                "last_changed": "2020-02-10T15:07:42.883439+00:00",
+                "last_updated": "2020-02-10T15:07:42.883439+00:00",
+                "state": "17:00:00"
+            }
+        },
+        {
+            "last_seen": "2020-02-10T15:22:54.011517+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Ti\u1ebfn D\u0169ng",
+                    "gps_accuracy": 65,
+                    "id": "0b084e195f73461491317b075034c879",
+                    "latitude": 21.00615294129088,
+                    "longitude": 105.82411873138639,
+                    "source": "device_tracker.goosecapitals_iphone",
+                    "user_id": "85f0c6b800604402b49bfa6e4ea14e20"
+                },
+                "context": {
+                    "id": "ca196f5350f94a02b5339a7944b1a5ac",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.tien_dung",
+                "last_changed": "2020-02-10T15:07:42.886128+00:00",
+                "last_updated": "2020-02-10T15:07:53.308390+00:00",
+                "state": "not_home"
+            }
+        },
+        {
+            "last_seen": "2020-02-10T15:22:54.011517+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "T\u1eaft h\u1eb9n gi\u1edd",
+                    "id": "switch_denga_off",
+                    "last_triggered": "2020-02-10T12:00:01.094406+00:00"
+                },
+                "context": {
+                    "id": "7d2804fbc44742989e76bf0e46ea8fba",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.tat_hen_gio",
+                "last_changed": "2020-02-10T15:07:43.384018+00:00",
+                "last_updated": "2020-02-10T15:07:43.384018+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-10T15:22:54.011517+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "B\u1eadt h\u1eb9n gi\u1edd",
+                    "id": "switch_denga_on",
+                    "last_triggered": "2020-02-10T10:00:01.107209+00:00"
+                },
+                "context": {
+                    "id": "5b5a14471b2544629d818e1157b662b3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.bat_hen_gio",
+                "last_changed": "2020-02-10T15:07:43.385367+00:00",
+                "last_updated": "2020-02-10T15:07:43.385367+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-10T15:22:54.011517+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "H\u1eb9n gi\u1edd t\u1eaft",
+                    "has_date": false,
+                    "has_time": true,
+                    "hour": 19,
+                    "minute": 0,
+                    "second": 0,
+                    "timestamp": 68400
+                },
+                "context": {
+                    "id": "5c0582ac5dff46699f0f34d8a1c6d992",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_datetime.switch_denga_off",
+                "last_changed": "2020-02-10T15:07:43.562008+00:00",
+                "last_updated": "2020-02-10T15:07:43.562008+00:00",
+                "state": "19:00:00"
+            }
+        },
+        {
+            "last_seen": "2020-02-10T15:22:54.011517+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Light_Bedroom"
+                },
+                "context": {
+                    "id": "a94a30a659bb4be3af899f8513ccfd57",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.light_bedroom",
+                "last_changed": "2020-02-10T15:07:43.831463+00:00",
+                "last_updated": "2020-02-10T15:07:43.831463+00:00",
+                "state": "unavailable"
+            }
+        },
+        {
+            "last_seen": "2020-02-10T15:22:54.011517+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "\u0110\u00e8n cho g\u00e0"
+                },
+                "context": {
+                    "id": "3a061c482543443cb18db027b8ec3649",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.den_cho_ga",
+                "last_changed": "2020-02-10T15:07:44.299006+00:00",
+                "last_updated": "2020-02-10T15:07:44.299006+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-02-10T15:22:54.011517+00:00",
+            "state": {
+                "attributes": {
+                    "altitude": 10.313651084899902,
+                    "battery_level": 71,
+                    "friendly_name": "GooseCapital\u2019s iPhone",
+                    "gps_accuracy": 65,
+                    "latitude": 21.00615294129088,
+                    "longitude": 105.82411873138639,
+                    "source_type": "gps",
+                    "vertical_accuracy": 37
+                },
+                "context": {
+                    "id": "1a80bddbbc154c2f9e6138b0d9b86150",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.goosecapitals_iphone",
+                "last_changed": "2020-02-10T15:07:44.542498+00:00",
+                "last_updated": "2020-02-10T15:07:44.542498+00:00",
+                "state": "not_home"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}
