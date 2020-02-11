@@ -15,3 +15,59 @@
   action:
   - service: switch.turn_on
     entity_id: switch.den_cho_ga
+
+- alias: "Đèn gà"
+  id: switch_denga_12
+  trigger:
+    platform: state
+    entity_id: switch.den_cho_ga
+    from: "on"
+    to: "off"
+  action:
+    service: notify.all_devices
+    data:
+      title: "Thông báo"
+      message: "Đèn gà đã tắt"
+      data:
+        push:
+          categories: switch_triggerd
+        entity_id: switch.den_cho_ga
+
+- alias: "Đèn gà"
+  id: switch_denga_13
+  trigger:
+    platform: state
+    entity_id: switch.den_cho_ga
+    from: "off"
+    to: "on"
+  action:
+    service: notify.all_devices
+    data:
+      title: "Thông báo"
+      message: "Đèn gà đã bật"
+      data:
+        push:
+          categories: switch_triggerd
+        entity_id: switch.den_cho_ga
+
+
+- alias: turn_on_chicken_light
+  initial_state: 'on'
+  trigger:
+      platform: event
+      event_type: ios.notification_action_fired
+      event_data:
+        actionName: TURN_ON_SWITCH
+  action:
+    service: switch.turn_on 
+    entity_id: switch.den_cho_ga
+
+- alias: turn_off_chicken_light
+  trigger:
+      platform: event
+      event_type: ios.notification_action_fired
+      event_data:
+        actionName: TURN_OFF_SWITCH
+  action:
+    service: switch.turn_off
+    entity_id: switch.den_cho_ga

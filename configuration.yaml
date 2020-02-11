@@ -72,8 +72,27 @@ input_datetime:
     # initial: '05:45'
 
 ios:
-
+  push:
+    categories:
+      - name: Switch_Trigger
+        identifier: "switch_triggerd"
+        actions: 
+          - identifier: 'TURN_ON_SWITCH'
+            title: 'Bật'
+            activationMode: 'background'
+            authenticationRequired: no
+            behavior: 'default'
+            destructive: false
+          - identifier: 'TURN_OFF_SWITCH'
+            title: 'Tắt'
+            destructive: true
+            activationMode: 'background'
+            authenticationRequired: no
+            behavior: 'default'
+  
 discovery:
+
+wake_on_lan:
 
 notify:
   - platform: html5
@@ -81,3 +100,11 @@ notify:
     vapid_pub_key: !secret html5_push_vapid_pub_key
     vapid_prv_key: !secret html5_push_vapid_prv_key
     vapid_email: !secret html5_push_vapid_email
+  - name: All_Devices
+    platform: group
+    services:
+      - service: webpushnotification
+      - service: notify
+
+shell_command:
+  turn_off_pc: "ssh -i /config/.ssh/id_rsa volumio@192.168.1.158 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no net rpc shutdown -f -t 60 -C 'Shutdown from Home Assistant' -U LoginPC%123456 -I 192.168.1.156"
