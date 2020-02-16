@@ -37,6 +37,25 @@ homekit:
     exclude_entities:
       - binary_sensor.updater
       - person.tien_dung
+      - automation.den_ga
+      - automation.den_ga_2
+      - automation.turn_off_chicken_light
+      - automation.turn_on_chicken_light
+      - person.bo
+      - device_tracker.goosecapitals_iphone
+      - device_tracker.iphone
+      - automation.tat_hen_gio
+      - automation.bat_hen_gio
+  entity_config:
+    switch.den_cho_ga:
+      name: "Chicken Light"
+      type: "switch"
+    switch.light_bedroom:
+      name: "Bedroom Light"
+      type: "switch"
+    switch.tien_dung_s_pc:
+      name: "PC"
+      type: "switch"
     
 
 google_assistant:
@@ -60,6 +79,10 @@ recorder:
       - sensor.time_date
       - sensor.time
       - sensor.time_utc
+
+history:
+
+logbook:
 
 input_datetime:
   switch_denga_on:
