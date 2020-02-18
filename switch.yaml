@@ -8,8 +8,8 @@
   availability_topic: "tele/sonoff_t3/LWT"
   payload_available: "Online"
   payload_not_available: "Offline"
-  qos: 1
-  retain: true
+  # qos: 1
+  # retain: true
   
 - platform: mqtt
   name: "Light_Bedroom"
@@ -21,8 +21,8 @@
   availability_topic: "tele/SwitchBedroom/LWT"
   payload_available: "Online"
   payload_not_available: "Offline"
-  qos: 1
-  retain: true
+  # qos: 1
+  # retain: true
 
 - platform: wake_on_lan
   mac: DC:4A:3E:F1:B4:19

@@ -7,6 +7,24 @@
   state: hanoi
   country: vietnam
   
+- platform: mqtt
+  name: "Temperature"
+  state_topic: "tele/TemperatureSensor_852E43/SENSOR"
+  value_template: "{{ value_json['DHT11'].Temperature }}"
+  unit_of_measurement: "°C"
+  availability_topic: "tele/TemperatureSensor_852E43/LWT"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+
+- platform: mqtt
+  name: "Humidity"
+  state_topic: "tele/TemperatureSensor_852E43/SENSOR"
+  value_template: "{{ value_json['DHT11'].Humidity }}"
+  unit_of_measurement: "%"
+  availability_topic: "tele/TemperatureSensor_852E43/LWT"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+
 - platform: time_date
   display_options:
     - 'time'
