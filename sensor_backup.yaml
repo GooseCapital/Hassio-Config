@@ -16,3 +16,15 @@
     - 'time_date'
     - 'time_utc'
     - 'beat'
+
+- platform: command_line
+  name: CPU Temperature
+  command: "cat /sys/class/thermal/thermal_zone0/temp"
+  unit_of_measurement: "°C"
+  value_template: '{{ value | multiply(0.001) | round(1) }}'
+
+- platform: systemmonitor
+  resources:
+    - type: memory_use_percent
+    - type: swap_use_percent
+    - type: processor_use
