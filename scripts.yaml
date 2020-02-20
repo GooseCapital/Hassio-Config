@@ -1,0 +1,4 @@
+'1582205654181':
+  alias: Reboot Pi
+  sequence:
+  - service: shell_command.reboot_pi

@@ -24,6 +24,28 @@
   availability_topic: "tele/TemperatureSensor_852E43/LWT"
   payload_available: "Online"
   payload_not_available: "Offline"
+  device_class: humidity
+
+- platform: template
+  sensors:
+    aqi_hanoi:
+      friendly_name: "AQI Hanoi"
+      value_template: >-
+        {% if is_state('sensor.u_s_air_pollution_level_2', 'Good') %}
+          Tốt
+        {% elif is_state('sensor.u_s_air_pollution_level_2', 'Moderate') %}
+          Trung Bình
+        {% elif is_state('sensor.u_s_air_pollution_level_2', 'Unhealthy for sensitive groups') %}
+          Không tốt với nhóm người nhạy cảm
+        {% elif is_state('sensor.u_s_air_pollution_level_2', 'Unhealthy') %}
+          Không tốt
+        {% elif is_state('sensor.u_s_air_pollution_level_2', 'Very Unhealthy') %}
+          Độc
+        {% elif is_state('sensor.u_s_air_pollution_level_2', 'Hazardous') %}
+          Rất độc
+        {% else %}
+          failed
+        {% endif %}
 
 - platform: time_date
   display_options:

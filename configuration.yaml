@@ -93,6 +93,14 @@ input_datetime:
     name: "Hẹn giờ tắt"
     has_time: true
     # initial: '05:45'
+  notify_weather:
+    name: "Thông báo thời tiết"
+    has_time: true
+
+weather:
+  - platform: darksky
+    api_key: !secret darkskyapi
+    mode: daily
 
 ios:
   push:
@@ -112,6 +120,9 @@ ios:
             activationMode: 'background'
             authenticationRequired: no
             behavior: 'default'
+      - name: Weather Notification
+        identifier: "weather_notify"
+        actions:
   
 discovery:
 
@@ -131,3 +142,4 @@ notify:
 
 shell_command:
   turn_off_pc: "ssh -i /config/.ssh/id_rsa volumio@192.168.1.158 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no net rpc shutdown -f -t 15 -C 'Shutdown_from_Home_Assistant' -U LoginPC%123456 -I 192.168.1.156"
+  reboot_pi: "ssh -i /config/.ssh/id_rsa volumio@192.168.1.158 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no reboot"

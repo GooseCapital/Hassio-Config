@@ -71,3 +71,20 @@
   action:
     service: switch.turn_off
     entity_id: switch.den_cho_ga
+
+- alias: "Thông báo thời tiết"
+  id: weather_notify
+  trigger:
+    platform: template
+    value_template: "{{ states.sensor.time.state == (states.input_datetime.notify_weather.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
+  action:
+    service: notify.all_devices
+    data:
+      title: "Thời tiết hôm nay"
+      message: |
+        "Nhiệt độ: {{ state_attr('weather.dark_sky', 'temperature')}}"
+        "Độ ẩm: {{ state_attr('weather.dark_sky', 'humidity')}}"
+        "Chất lượng không khí: {{ states.sensor.u_s_air_quality_index_2.state }} - {{ states.sensor.aqi_hanoi.state }}"
+      data:
+        push:
+          categories: weather_notify
